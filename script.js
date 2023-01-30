@@ -13,10 +13,10 @@ const generatePalette = () => {
         //creating a new 'li' element 
         const color = document.createElement("li");
         color.classList.add("color");
-        color.innerHTML = ` <div class="rect-box" style="background: ${randomHex}"></div>
+        color.innerHTML = `<div class="rect-box" style="background: ${randomHex}"></div>
                             <span class="hex-value">${randomHex}</span>`;
  
-        //copy the color
+        //copy the colorS
         color.addEventListener("click", () => copyColor(color, randomHex));
         container.appendChild(color);
     }
